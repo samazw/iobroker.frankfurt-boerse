@@ -1,45 +1,58 @@
 {
   "type": "panel",
   "items": {
-    "main": {
-      "type": "panel",
-      "items": {
-        "aktienAuswahl": {
-          "type": "select",
-          "label": "Aktie / Asset auswählen",
-          "sm": 8,
-          "options": [
-            {"value": "LHA.F", "label": "Lufthansa (Airline)"},
-            {"value": "SAP.F", "label": "SAP (Software)"},
-            {"value": "ADS.F", "label": "Adidas (Sport)"},
-            {"value": "BMW.F", "label": "BMW (Automobil)"},
-            {"value": "VOW3.F", "label": "Volkswagen (Automobil)"},
-            {"value": "DBK.F", "label": "Deutsche Bank (Finanzen)"},
-            {"value": "DTE.F", "label": "Deutsche Telekom (Telco)"},
-            {"value": "IFX.F", "label": "Infineon (Halbleiter)"},
-            {"value": "BAS.F", "label": "BASF (Chemie)"},
-            {"value": "BAYN.F", "label": "Bayer (Pharma)"},
-            {"value": "ALV.F", "label": "Allianz (Versicherung)"},
-            {"value": "21BC.F", "label": "21Shares DeFi 10 (DeFi Index)"},
-            {"value": "A2N645.F", "label": "Antimony / Strategic Metals (Rohstoffe)"},
-            {"value": "AAPL.F", "label": "Apple (Tech)"},
-            {"value": "MSF.F", "label": "Microsoft (Tech)"},
-            {"value": "TSLA.F", "label": "Tesla (Automobil/Tech)"},
-            {"value": "AMZ.F", "label": "Amazon (Retail)"},
-            {"value": "NVDA.F", "label": "Nvidia (AI/GPU)"},
-            {"value": "META.F", "label": "Meta / Facebook (Social)"},
-            {"value": "GOOGL.F", "label": "Alphabet / Google (Tech)"},
-            {"value": "BTC-EUR.F", "label": "Bitcoin (Krypto/EUR)"},
-            {"value": "ETH-EUR.F", "label": "Ethereum (Krypto/EUR)"}
-          ]
-        },
-        "intervall": {
-          "type": "number",
-          "label": "Abfrageintervall (Minuten)",
-          "sm": 4,
-          "default": 10
-        }
-      }
+    "aktienAuswahl": {
+      "type": "select",
+      "label": "Aktie / Asset auswählen",
+      "sm": 8,
+      "options": [
+        {"value": "LHA.F", "label": "Lufthansa"},
+        {"value": "SAP.F", "label": "SAP"},
+        {"value": "ADS.F", "label": "Adidas"},
+        {"value": "BMW.F", "label": "BMW"},
+        {"value": "VOW3.F", "label": "Volkswagen"},
+        {"value": "DBK.F", "label": "Deutsche Bank"},
+        {"value": "DTE.F", "label": "Deutsche Telekom"},
+        {"value": "IFX.F", "label": "Infineon"},
+        {"value": "BAS.F", "label": "BASF"},
+        {"value": "BAYN.F", "label": "Bayer"},
+        {"value": "ALV.F", "label": "Allianz"},
+        {"value": "21BC.F", "label": "21Shares DeFi 10 Index"},
+        {"value": "A2N645.F", "label": "Antimony / Strategic Metals"},
+        {"value": "AAPL.F", "label": "Apple"},
+        {"value": "MSF.F", "label": "Microsoft"},
+        {"value": "TSLA.F", "label": "Tesla"},
+        {"value": "AMZ.F", "label": "Amazon"},
+        {"value": "NVDA.F", "label": "Nvidia"},
+        {"value": "BTC-EUR.F", "label": "Bitcoin (EUR)"},
+        {"value": "ETH-EUR.F", "label": "Ethereum (EUR)"},
+        {"value": "GLD.F", "label": "Gold (ETF)"},
+        {"value": "SLV.F", "label": "Silber (ETF)"},
+        {"value": "RHM.F", "label": "Rheinmetall"},
+        {"value": "MBG.F", "label": "Mercedes-Benz"},
+        {"value": "MUV2.F", "label": "Münchener Rück"},
+        {"value": "DHL.F", "label": "Deutsche Post / DHL"},
+        {"value": "SIE.F", "label": "Siemens"},
+        {"value": "ENR.F", "label": "Siemens Energy"},
+        {"value": "HEI.F", "label": "Heidelberg Materials"},
+        {"value": "LIN.F", "label": "Linde"},
+        {"value": "ZAL.F", "label": "Zalando"},
+        {"value": "CON.F", "label": "Continental"},
+        {"value": "HFG.F", "label": "HelloFresh"},
+        {"value": "AIR.F", "label": "Airbus"},
+        {"value": "PAH3.F", "label": "Porsche SE"},
+        {"value": "BNR.F", "label": "Brenntag"},
+        {"value": "MTX.F", "label": "MTU Aero Engines"},
+        {"value": "CBK.F", "label": "Commerzbank"},
+        {"value": "SY1.F", "label": "Symrise"},
+        {"value": "BEI.F", "label": "Beiersdorf"}
+      ]
+    },
+    "intervall": {
+      "type": "number",
+      "label": "Abfrageintervall (Minuten)",
+      "sm": 4,
+      "default": 10
     }
   }
 }
