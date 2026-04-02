@@ -25,8 +25,7 @@ class FrankfurtBoerse extends utils.Adapter {
 
     async fetchPrice(symbol, dpName) {
         try {
-            // WICHTIG: Hier waren die Backticks und das Dollarzeichen falsch
-            const url = `https://yahoo.com{symbol}`;
+            const url = `https://yahoo.com${symbol}`;
             const response = await axios.get(url);
             
             if (response.data && response.data.chart && response.data.chart.result) {
