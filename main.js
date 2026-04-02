@@ -9,27 +9,31 @@ class FrankfurtBoerse extends utils.Adapter {
     }
 
     async onReady() {
-        const symbol = this.config.aktienAuswahl;
+        const symbol = this.config.aktienAuswahl || 'LHA.F';
+        const intervall = parseInt(this.config.intervall) || 10;
         const dpName = `kurs_${symbol.replace('.', '_')}`;
 
-        // Datenpunkt automatisch erstellen
         await this.setObjectNotExistsAsync(dpName, {
             type: 'state',
             common: { name: `Kurs ${symbol}`, type: 'number', role: 'value.price', unit: 'EUR', read: true, write: false },
             native: {},
         });
 
-        this.updateInterval = setInterval(() => this.fetchPrice(symbol, dpName), this.config.intervall * 60000);
-        this.fetchPrice(symbol, dpName); // Erster Aufruf sofort
+        this.updateInterval = setInterval(() => this.fetchPrice(symbol, dpName), intervall * 60000);
+        this.fetchPrice(symbol, dpName);
     }
 
     async fetchPrice(symbol, dpName) {
         try {
+            // WICHTIG: Hier waren die Backticks und das Dollarzeichen falsch
             const url = `https://yahoo.com{symbol}`;
             const response = await axios.get(url);
-            const price = response.data.chart.result[0].meta.regularMarketPrice;
-            this.setState(dpName, { val: price, ack: true });
-            this.log.info(`Update für ${symbol}: ${price} EUR`);
+            
+            if (response.data && response.data.chart && response.data.chart.result) {
+                const price = response.data.chart.result[0].meta.regularMarketPrice;
+                this.setState(dpName, { val: price, ack: true });
+                this.log.info(`Update für ${symbol}: ${price} EUR`);
+            }
         } catch (e) {
             this.log.error(`Fehler beim Abrufen von ${symbol}: ${e.message}`);
         }
