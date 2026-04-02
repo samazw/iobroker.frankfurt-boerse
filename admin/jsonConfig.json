@@ -1,26 +1,26 @@
 {
-  "tabs": {
-    "main": {
-      "type": "panel",
-      "items": {
-        "aktienAuswahl": {
-          "type": "select",
-          "label": "Aktie auswählen",
-          "sm": 6,
-          "options": [
-            {"value": "ADS.F", "label": "Adidas (Frankfurt)"},
-            {"value": "BMW.F", "label": "BMW (Frankfurt)"},
-            {"value": "SAP.F", "label": "SAP (Frankfurt)"},
-            {"value": "VOW3.F", "label": "Volkswagen (Frankfurt)"}
-          ]
-        },
-        "intervall": {
-          "type": "number",
-          "label": "Abfrageintervall (Minuten)",
-          "sm": 6,
-          "default": 10
-        }
+  "common": {
+    "name": "frankfurt-boerse",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "Initial release with 100+ stocks",
+        "de": "Erstveröffentlichung mit über 100 Aktien"
       }
-    }
+    },
+    "title": "Frankfurt Börse Kursabfrage",
+    "desc": "Ruft Kurse der Frankfurter Börse ab",
+    "icon": "chart.png",
+    "extIcon": "https://githubusercontent.com",
+    "type": "weather",
+    "role": "value.price",
+    "authors": ["User"],
+    "dependencies": [{"js-controller": ">=3.0.0"}],
+    "materialize": true,
+    "compact": true
+  },
+  "native": {
+    "aktienAuswahl": "LHA.F",
+    "intervall": 10
   }
 }
