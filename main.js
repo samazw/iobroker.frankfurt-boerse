@@ -25,7 +25,7 @@ class FrankfurtBoerse extends utils.Adapter {
 
     async fetchPrice(symbol, dpName) {
         try {
-            const url = `https://yahoo.com${symbol}`;
+            const url = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}`;
             const response = await axios.get(url);
             
             if (response.data && response.data.chart && response.data.chart.result) {
