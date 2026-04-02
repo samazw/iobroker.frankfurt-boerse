@@ -4,18 +4,38 @@
     "version": "0.1.0",
     "news": {
       "0.1.0": {
-        "en": "Initial release with 100+ stocks",
-        "de": "Erstveröffentlichung mit über 100 Aktien"
+        "en": "Initial release with JSON config support",
+        "de": "Erstveröffentlichung mit JSON-Konfigurationsunterstützung"
       }
     },
     "title": "Frankfurt Börse Kursabfrage",
-    "desc": "Ruft Kurse der Frankfurter Börse ab",
+    "titleLang": {
+      "en": "Frankfurt Stock Exchange",
+      "de": "Frankfurt Börse Kursabfrage"
+    },
+    "desc": {
+      "en": "Retrieves stock prices from Frankfurt Stock Exchange",
+      "de": "Ruft Aktienkurse der Frankfurter Börse ab"
+    },
+    "authors": ["samazw"],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "main.js",
     "icon": "chart.png",
+    "enabled": true,
     "extIcon": "https://githubusercontent.com",
     "type": "weather",
-    "role": "value.price",
-    "authors": ["User"],
-    "dependencies": [{"js-controller": ">=3.0.0"}],
+    "keywords": ["finance", "stock", "frankfurt", "boerse"],
+    "loglevel": "info",
+    "icon": "chart.png",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.0.0"
+      }
+    ],
     "materialize": true,
     "compact": true
   },
