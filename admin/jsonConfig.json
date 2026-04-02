@@ -1,0 +1,26 @@
+{
+  "tabs": {
+    "main": {
+      "type": "panel",
+      "items": {
+        "aktienAuswahl": {
+          "type": "select",
+          "label": "Aktie auswählen",
+          "sm": 6,
+          "options": [
+            {"value": "ADS.F", "label": "Adidas (Frankfurt)"},
+            {"value": "BMW.F", "label": "BMW (Frankfurt)"},
+            {"value": "SAP.F", "label": "SAP (Frankfurt)"},
+            {"value": "VOW3.F", "label": "Volkswagen (Frankfurt)"}
+          ]
+        },
+        "intervall": {
+          "type": "number",
+          "label": "Abfrageintervall (Minuten)",
+          "sm": 6,
+          "default": 10
+        }
+      }
+    }
+  }
+}
