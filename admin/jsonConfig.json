@@ -16,6 +16,9 @@
             {"value": "DBK.F", "label": "Deutsche Bank (Finanzen)"},
             {"value": "DTE.F", "label": "Deutsche Telekom (Telco)"},
             {"value": "IFX.F", "label": "Infineon (Halbleiter)"},
+            {"value": "BAS.F", "label": "BASF (Chemie)"},
+            {"value": "BAYN.F", "label": "Bayer (Pharma)"},
+            {"value": "ALV.F", "label": "Allianz (Versicherung)"},
             {"value": "21BC.F", "label": "21Shares DeFi 10 (DeFi Index)"},
             {"value": "A2N645.F", "label": "Antimony / Strategic Metals (Rohstoffe)"},
             {"value": "AAPL.F", "label": "Apple (Tech)"},
@@ -23,9 +26,11 @@
             {"value": "TSLA.F", "label": "Tesla (Automobil/Tech)"},
             {"value": "AMZ.F", "label": "Amazon (Retail)"},
             {"value": "NVDA.F", "label": "Nvidia (AI/GPU)"},
-            {"value": "BTC-EUR.F", "label": "Bitcoin (Krypto/Frankfurt)"},
-            {"value": "ETH-EUR.F", "label": "Ethereum (Krypto/Frankfurt)"}
-            /* ... hier können weitere 80+ Zeilen eingefügt werden ... */
+            {"value": "META.F", "label": "Meta / Facebook (Social)"},
+            {"value": "GOOGL.F", "label": "Alphabet / Google (Tech)"},
+            {"value": "BTC-EUR.F", "label": "Bitcoin (Krypto/EUR)"},
+            {"value": "ETH-EUR.F", "label": "Ethereum (Krypto/EUR)"}
+            /* ... du kannst hier beliebig weitere Zeilen im gleichen Format ergänzen ... */
           ]
         },
         "intervall": {
