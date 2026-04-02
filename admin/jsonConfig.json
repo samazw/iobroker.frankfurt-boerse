@@ -1,5 +1,6 @@
 {
-  "tabs": {
+  "type": "panel",
+  "items": {
     "main": {
       "type": "panel",
       "items": {
@@ -30,7 +31,6 @@
             {"value": "GOOGL.F", "label": "Alphabet / Google (Tech)"},
             {"value": "BTC-EUR.F", "label": "Bitcoin (Krypto/EUR)"},
             {"value": "ETH-EUR.F", "label": "Ethereum (Krypto/EUR)"}
-            /* ... du kannst hier beliebig weitere Zeilen im gleichen Format ergänzen ... */
           ]
         },
         "intervall": {
